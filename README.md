@@ -30,6 +30,7 @@ python -m SimpleHTTPServer 8888
 Authentication Flow
 ====
 1. **Frontend** (or static html) Serves the login page
+    *Visit it at localhost:8888*
 
 
 2. **Frontend** (or static html) sends the credentials securely through POST (usually *username* and *password*) along with a **redirect_url** so the backend knows where to redirect the user after authorization
