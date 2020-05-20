@@ -11,6 +11,9 @@ Serve the project
 ====
 
 Make sure you have Python 3
+
+Change **PUBLIC_PATH** and **FRONTEND_URL** in tookie/settings.py if you wish to change URLS
+
 #### Install Requirements
 
 `pip install requirements.txt`
