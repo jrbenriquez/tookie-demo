@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
     'demo.apps.DemoConfig',
-    'authorization.apps.AuthorizationConfig'
+    'authentication.apps.AuthorizationConfig'
 ]
 
 CORS_ORIGIN_WHITELIST = [
@@ -68,7 +68,7 @@ ROOT_URLCONF = 'tookie.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['authorization/templates'],
+        'DIRS': ['authentication/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -136,6 +136,7 @@ STATIC_URL = '/static/'
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework.authentication.SessionAuthentication',
+        'authentication.utils.token.ExpiringTokenAuthentication'
         #'rest_framework.authentication.TokenAuthentication',
     ),
     'DEFAULT_PERMISSION_CLASSES': (
@@ -146,4 +147,6 @@ REST_FRAMEWORK = {
         'rest_framework.parsers.JSONParser',
     ]
 }
+
+REST_FRAMEWORK_TOKEN_SECONDS_EXPIRY = 1800
 

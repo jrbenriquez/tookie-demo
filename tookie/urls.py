@@ -15,11 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from authorization.views import set_cookie
+from authentication.views import set_cookie
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('demo.urls')),
-    path('auth/', include('authorization.urls')),
+    path('auth/', include('authentication.urls')),
     path('authorize', set_cookie, name='set-cookie')
 ]
