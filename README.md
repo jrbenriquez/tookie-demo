@@ -1,5 +1,5 @@
 # tookie-demo
-Django app that demonstrates Cookie based authentication for quick prototypes of Server Side Rendered MVP's which can also work with Token Based Authentication if needed in the future
+Django app that serves as reference in demonstrating Cookie based authentication for quick prototypes of Server Side Rendered MVP's which can also work with Token Based Authentication if needed in the future
 
 Creating MVP's with Django almost always deals with server side rendered applications which makes use of Django's built in SessionAuthentication
 
