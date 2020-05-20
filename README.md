@@ -49,7 +49,7 @@ Authentication Flow
     **Backend Response**
 ```
 {
-    "redirect": "http://localhost:8000/authorize?r=1&auth_token=DjOH-FOL8OlnF9KzmMU4hAd_WSJe07bLkaC0jEZO0NM%3D&redirect_url=http%3A%2F%2Flocalhost%3A8000%2Ffetch.html"
+    "redirect": "http://localhost:8000/authorize?r=1&auth_token=DjOH-FOL8OlnF9KzmMU4hAd_WSJe07bLkaC0jEZO0NM%3D&redirect_url=http%3A%2F%2Flocalhost%3A8000%2Fprotected_data.html"
 }
 ```
 
