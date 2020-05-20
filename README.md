@@ -36,7 +36,7 @@ Authentication Flow
     *Visit it at localhost:8888*
 
 
-      ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Sign In")
+      ![alt text](https://github.com/jrbenriquez/tookie-demo/raw/master/docs/signin.png "Sign In")
 
 2. **Frontend** (or static html) sends the credentials securely through POST (usually *username* and *password*) along with a **redirect_url** so the backend knows where to redirect the user after authorization
 
