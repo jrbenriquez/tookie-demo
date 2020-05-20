@@ -46,8 +46,8 @@ INSTALLED_APPS = [
 ]
 
 CORS_ORIGIN_WHITELIST = [
-    "http://localhost:8000",
-    "http://localhost:8888",
+    PUBLIC_PATH,
+    FRONTEND_URL,
 ]
 
 CORS_ALLOW_CREDENTIALS = True
